@@ -1,0 +1,26 @@
+<!--pages/foreign/foreign.wxml-->
+<view class="chinese">
+  <image src="cloud://kris-ting3.6b72-kris-ting3/krisW/Music/Foreign/Foreign.jpg"></image>
+  <text>英文说唱</text>
+</view>
+
+<view class="after"></view>
+
+<!-- 歌曲列表 -->
+<text class="list">歌曲列表</text>
+
+<view wx:for="{{songList}}">
+  <navigator url="{{item.url}}">
+    <view class="ListCont">
+      <text class="num">{{index+1}}</text>
+      <view class="listRight">
+        <view class="songMsg">
+          <text class="song">{{item.song}}</text>
+          <text class="singer">{{item.singer}}</text>
+        </view>
+        <image class="play" src="cloud://kris-ting3.6b72-kris-ting3/krisW/Music/play.png"></image>
+      </view>
+    </view>
+  </navigator>
+</view>
+

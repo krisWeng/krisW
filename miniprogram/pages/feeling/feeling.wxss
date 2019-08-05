@@ -1,0 +1,72 @@
+/* pages/feeling/feeling.wxss */
+/* 轮播图 */
+swiper{
+  margin-bottom: 30rpx;
+}
+swiper .slide-image{
+  width: 750rpx;
+}
+.chatBox{
+  padding: 0 25rpx;
+  background: white;
+  margin-bottom: 30rpx;
+}
+/* 发帖人信息 */
+.userMsg{
+  height: 120rpx;
+  /* background: blue; */
+  display: flex;
+  align-items: center;
+}
+.userMsg image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 99px;
+  border: 1px solid gainsboro;
+}
+.userMsg .NameTime{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.userMsg .NameTime .userName{
+  font-size: 14px;
+  margin-bottom: 3px;
+  font-weight: bolder;
+}
+.userMsg .NameTime .sendTime{
+  font-size: 10px;
+  color: #808080;
+}
+/* 发帖内容 */
+.chatCont{
+  font-size: 14px;
+  margin-bottom: 20rpx;
+  text-align: justify;
+}
+.chatCont image{
+  width: 700rpx;
+  margin-top: 10px;
+}
+/* 点赞 评论 */
+.btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #f2f2f5;
+}
+.btn image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.btn .discuss{
+  font-size: 12px;
+  margin: 0;
+}
+.btn .line{
+  color: #d9d9d9;
+}
+.btn .red{
+  color: red;
+  font-size: 12px;
+}

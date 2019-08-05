@@ -1,0 +1,56 @@
+/* pages/music/music.wxss */
+/* 轮播图 */
+swiper .slide-image{
+  width: 750rpx;
+  height: 350rpx;
+}
+/* 导航 */
+.btn-area{
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx 0;
+  background: #fff;
+  border: 1px solid #f2f2f5;
+}
+navigator{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  text-align: center;
+}
+.btn-area navigator image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 5rpx;
+}
+/* 为你推荐 */
+.recommend{
+  background: #fff;
+  padding-top: 30rpx;
+}
+.recommend .title{
+  padding-left: 35rpx;
+  font-weight: bolder;
+}
+.recomSong{
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.SongBox{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-bottom: 20rpx;
+}
+.SongBox image{
+  width: 220rpx;
+  height: 220rpx;
+  margin-bottom: 20rpx;
+}
+.SongBox text{
+  width: 220rpx;
+  word-wrap: break-word;
+  text-align: justify;
+}

@@ -1,0 +1,10 @@
+<!--pages/register/register.wxml-->
+<view>
+  <text>注册</text>
+
+  <form bindsubmit="register">
+    <input type="user" name="user" placeholder="请输入4~6位英文"></input>
+    <input type="password" name="password" placeholder="请输入密码"></input>
+    <button form-type="submit">注册</button>
+  </form>
+</view>

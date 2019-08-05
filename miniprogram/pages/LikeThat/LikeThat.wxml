@@ -1,0 +1,40 @@
+<!--pages/LikeThat/LikeThat.wxml-->
+<view class="title">
+  <text class="song">Like That</text>
+  <text class="singer">吴亦凡</text>
+</view>
+<view class="title titleFixed">
+  <text class="song">Like That</text>
+  <text class="singer">吴亦凡</text>
+</view>
+
+<view class="content">
+  <image src="cloud://kris-ting3.6b72-kris-ting3-1300002611/krisW/Music/Foreign/LikeThat.jpg" class="{{isOpen==true?'play':''}}"></image>
+</view>
+
+<view class='audiosBox'>
+    <view bindtap="listenerButtonPlay" wx:if="{{!isOpen}}">
+      <image class='audioOpen' src="cloud://kris-ting3.6b72-kris-ting3-1300002611/krisW/Music/play.png" />
+    </view>
+    <view bindtap="listenerButtonPause" wx:if="{{isOpen}}">
+      <image class="audioOpen" src="cloud://kris-ting3.6b72-kris-ting3/krisW/Music/zanting.png" />
+    </view>
+
+    <view class='slid'>
+      <slider bindchange="sliderChange"  block-size="12px" step="2" value="{{offset}}" max="{{max}}" selected-color="#4c9dee" />
+
+      <view>
+        <text class='times'>{{starttime}}</text> <!-- 进度时长 -->
+        <text class='times'>{{duration}}</text>   <!-- 总时长 -->
+      </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+

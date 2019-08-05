@@ -1,0 +1,42 @@
+<!--pages/self/self.wxml-->
+<view class="selfTop">
+  <!-- 用户信息 -->
+  <view class="usermsg">
+    <view class="userLeft">
+      <image src="cloud://kris-ting3.6b72-kris-ting3-1300002611/krisW/Feeling/user03.jpg"></image>
+      <view class="NameGrade">
+        <text class="userName">{{user}}</text>
+        <text class="userGrade">Lv.7</text>
+      </view>
+    </view>
+    <text class="SignIn">签到</text>
+  </view>
+  <!-- 动态 关注 粉丝 -->
+  <view class="means">
+    <view class="trends" wx:for="{{meansList}}">
+      <text class="meansNum">{{item.num}}</text>
+      <text class="meansName">{{item.name}}</text>
+    </view>
+    <view class="trends">
+      <navigator url="/pages/send/send">
+        <image src="cloud://kris-ting3.6b72-kris-ting3/krisW/Self/bianji.png"></image>
+        <text class="meansName">发帖</text>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<!-- 背景图 -->
+<view class="after"></view>
+
+<!-- 第二部分 -->
+<view class="selfTwo" wx:for="{{feelList}}">
+  <view class="left">
+    <text class="leftTop">{{item.month}}</text>
+    <text>{{item.day}}</text>
+  </view>
+  <view class="right">{{item.cont}}</view>
+</view>
+
+<!-- 退出登录 -->
+<button bindtap="out">退出登录</button>

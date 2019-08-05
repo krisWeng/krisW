@@ -1,0 +1,3 @@
+<!--pages/send/send.wxml-->
+<textarea placeholder-style='color: #d2cecf' placeholder='这一刻的想法...'></textarea>
+<button type="submit">发送</button>

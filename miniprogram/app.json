@@ -1,0 +1,92 @@
+{
+  "pages": [
+    "pages/login/login",
+
+    "pages/send/send",
+    
+    "pages/self/self",
+    
+    "pages/register/register",
+
+
+    "pages/text/text",
+    "pages/index/index",
+
+    "pages/feeling/feeling",
+    
+    "pages/music/music",
+    "pages/Foreign/Foreign",
+    "pages/RapGod/RapGod",
+    "pages/Chaos/Chaos",
+    "pages/LikeThat/LikeThat",
+    "pages/DatTick/DatTick",
+    "pages/LoveTheWayYouLie/LoveTheWayYouLie",
+    "pages/Oxygen/Oxygen",
+    "pages/ThePhoenix/ThePhoenix",
+    "pages/Papillon/Papillon",
+
+    "pages/Chinese/Chinese",
+    "pages/XY/XY",
+    "pages/DWKM/DWKM",
+    "pages/LHZ/LHZ",
+    "pages/HB/HB",
+    "pages/PSWJ/PSWJ",
+    "pages/CKXZ/CKXZ",
+    "pages/QGJ/QGJ",
+    "pages/WNJ/WNJ",
+    "pages/XJJZS/XJJZS",
+    "pages/XRZS/XRZS",
+
+    "pages/Cantonese/Cantonese",
+    "pages/ABC/ABC",
+    "pages/CFBR/CFBR",
+    "pages/DGSG/DGSG",
+    "pages/ZERO/ZERO",
+    "pages/WLZY/WLZY",
+    "pages/QXNDTBH/QXNDTBH",
+
+    
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#19a15f",
+    "navigationBarTitleText": "krisW",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "color": "#909090",
+    "selectedColor": "#00b26a",
+    "list": [
+      {
+        "pagePath": "pages/feeling/feeling",
+        "text": "Feel",
+        "iconPath": "images/fatie.png",
+        "selectedIconPath": "images/fatie_s.png"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "Music",
+        "iconPath": "images/yinyue.png",
+        "selectedIconPath": "images/yinyue_s.png"
+      },
+      {
+        "pagePath": "pages/self/self",
+        "text": "Self",
+        "iconPath": "images/self.png",
+        "selectedIconPath": "images/self_s.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

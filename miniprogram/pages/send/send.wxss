@@ -1,0 +1,14 @@
+/* pages/send/send.wxss */
+page{
+  background: #fff;
+}
+textarea{
+  width: 700rpx;
+  margin-top: 15px;
+  align-self: center;
+}
+button{
+  width: 700rpx;
+  background: rgb(33, 221, 33);
+  margin-top: 30px;
+}

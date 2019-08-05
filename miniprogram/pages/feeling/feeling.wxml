@@ -1,0 +1,55 @@
+<!--pages/feeling/feeling.wxml-->
+<!-- 轮播图 -->
+<swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="chatBox" wx:for="{{invitation}}" wx:key="{{index}}">
+  <!-- 发帖人信息 -->
+  <view class="userMsg">
+    <!-- 头像 -->
+    <image src="{{item.pic}}"></image>
+    <view class="NameTime">
+      <text class="userName">{{item.userName}}</text>
+      <text class="sendTime">{{item.sendTime}}</text>
+    </view>
+  </view>
+  <!-- 发帖内容 -->
+  <view class="chatCont">
+    {{item.chatCont}}
+  </view>
+  <!-- 点赞评论 -->
+  <view class="btn">
+    <image src="../../images/dianzan.png" hidden='{{!item.show}}' bindtap='good' data-index='{{index}}'></image>
+    <image src="../../images/dianzan-c.png" hidden='{{item.show}}' bindtap='good' data-index='{{index}}'></image>
+    <text class="line">|</text>
+    <button class="discuss">评论</button>
+  </view>
+</view>
+
+<view class="chatBox">
+  <!-- 发帖人信息 -->
+  <view class="userMsg">
+    <!-- 头像 -->
+    <image src="cloud://kris-ting3.6b72-kris-ting3-1300002611/krisW/Feeling/user01.jpg"></image>
+    <view class="NameTime">
+      <text class="userName">网友四号</text>
+      <text class="sendTime">7月24日 00:00</text>
+    </view>
+  </view>
+  <!-- 发帖内容 -->
+  <view class="chatCont">
+    <image src="cloud://kris-ting3.6b72-kris-ting3/krisW/Feeling/bg02.jpg"></image>
+  </view>
+  <!-- 点赞评论 -->
+  <view class="btn">
+    <image src="../../images/dianzan.png" hidden='{{!show}}' bindtap='good01'></image>
+    <image src="../../images/dianzan-c.png" hidden='{{show}}' bindtap='good01'></image>
+    <text class="line">|</text>
+    <button class="discuss">评论</button>
+  </view>
+</view>

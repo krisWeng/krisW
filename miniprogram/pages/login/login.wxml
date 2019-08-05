@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view>
+  <text class="login">登录</text>
+
+  <form bindsubmit="login">
+    <input type="user" name="user" placeholder="请输入4~6位英文"></input>
+    <input type="password" name="password" placeholder="请输入密码"></input>
+    <button form-type="submit">登录</button>
+  </form>
+
+  <view class="boxDowm">
+    <text>没有帐号？</text><navigator url="/pages/register/register">去注册</navigator>
+  </view>
+</view>
